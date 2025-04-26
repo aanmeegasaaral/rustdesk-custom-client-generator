@@ -117,14 +117,14 @@ jobs:
         if: ${{ env.VERSION == 'master' }}
         uses: actions/checkout@v4
         with:
-          repository: varunsridharan/rustdesk
+          repository: aanmeegasaaral/rustdesk
           submodules: recursive
 
       - name: Checkout source code (tag)
         if: ${{ env.VERSION != 'master' }}
         uses: actions/checkout@v4
         with:
-          repository: varunsridharan/rustdesk
+          repository: aanmeegasaaral/rustdesk
           ref: refs/tags/${{ env.VERSION }}
           submodules: recursive
 
